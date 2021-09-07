@@ -36,7 +36,7 @@
     margin-right: 10px;
   }
   .main {
-    margin-left: 50px; /* Same as the width of the sidenav */
+    margin-left: 160px; /* Same as the width of the sidenav */
     padding: 0px 10px;
   }
   
@@ -44,8 +44,3 @@
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
- 
- .col-md-4 {
-    /* flex: 0 0 auto; */
-    width: 20.33333333%;
-}
