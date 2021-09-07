@@ -1,0 +1,21 @@
+.latest-title{
+    padding:0px 20px 0px 20px;
+}
+.latest-marq{
+    border: 1px solid gray;
+   
+}
+.latest-para p{
+   margin-left: 20px;
+    
+}
+
+.marquee-name{
+    border:1px solid gray;
+    height:35px;
+}
+.social-icon-top{
+    margin-left:auto;
+    padding-top:10px;
+    
+}
