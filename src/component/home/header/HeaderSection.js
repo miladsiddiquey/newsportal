@@ -64,26 +64,17 @@ const HeaderSection = () => {
             <div className="container">
                 <div className="row mt-4">
                 <div className="d-flex "><h3 className="h4 category-name"><span>Latest</span></h3>
-                <marquee className=" marquee-name">
-               {
-                   latestData.map((latestData, index)=>(
-                   
-                  <div>
-                       <h5>{latestData.title}</h5>
-                  </div>
                 
-                   ))
-               }
+                <marquee className=" marquee-name">
+               <div className="d-flex latest-data-line">
+                   {
+                       latestData.map((lData,index)=>(
+                           <h5>#{lData.title}</h5>
+                       ))
+                   }
+               </div>
                
-               </marquee>
-               
-              
-               
-                   
-               
-              
-              
-             
+               </marquee>              
                
                 </div> 
 

@@ -1,46 +1,54 @@
-.img-style{
-    width: 65%;
-    margin-left: 20px;
-    
+.d-sidebar{
+  /* background: #fcf2e8; */
+  padding-left: 16rem;
+  margin:0px 20px 0px 20px;
 }
-.text{
-    margin-left: 30px;
-    color: #c5b8b8;
-    font-size: 20px;
+header{
+  position: fixed;
+  top:0; left:0; bottom:0;
+  background: #222;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  z-index:1000;
+  flex-flow: column;
+  padding:2rem 2rem;
+ 
+}
+header .logo{
+  text-transform: uppercase;
+  color:#fff;
+  font-size:  2rem;
+  font-weight: bolder;
+}
+header .d-navbar .link{
+  display: block;
+  font-size: 20px;
+  color:#fff;
+  margin:1rem 0;
+  /* line-height: 20px; */
+  
+}
+header .d-navbar{
+  margin-top: 30px;
+}
+header .d-navbar .link:hover{
+  /* letter-spacing: .1rem; */
+  color:gold;
 }
 
-.sidebar {
-    height: 100%;
-    width: 180px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 16px;
+/* @media (max-width:750) {
+  header{
+    display: none !important;
   }
-  
-  .sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
+} */
+@media (max-width: 768px) { 
+  header{
+    display: none;
   }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
+  .d-sidebar{
+    /* background: #fcf2e8; */
+    padding-left: 0px;
+    margin:0px 20px 0px 20px;
   }
-  .side-icon{
-    margin-right: 10px;
-  }
-  .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+ }

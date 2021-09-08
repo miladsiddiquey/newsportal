@@ -7,27 +7,26 @@ import SportsNews from './component/pages/sportsPage/SportsNews';
 import NotFound from './component/pages/notFound/NotFound';
 import InterNews from './component/pages/internationalN/InterNews';
 import Admin from './component/pages/admin/Admin';
+import Sidebar from './component/pages/admin/sidebar/Sidebar';
 
 import {
-
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 const App = () => {
   return (
 
-     <Router>
-      
+     <Router> 
        <Switch>
          <Route path = '/home'><Home/></Route>
          <Route path = '/topSingle/:id'><TopSingle/></Route>
          <Route path = '/foodNews'><FoodNews/></Route>
          <Route path = '/sportsNews'><SportsNews/></Route>
          <Route path = '/interNews'><InterNews/></Route>
-         <Route path = '/admin'><Admin/></Route>     
+         <Route path = '/admin'><Admin/></Route> 
+         <Route path = '/sidebar'><Sidebar/></Route>    
          <Route exact path = '/'><Home/></Route>
          <Route path = '*'><NotFound/></Route>
        </Switch>

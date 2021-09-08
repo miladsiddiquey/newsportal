@@ -4,7 +4,7 @@ import './ListAdmin.css';
 const ListAdmin = () => {
     return (
         <div>
-            <h2>List admin page</h2>
+            <h2 className="text-center mt-5">List of Admin</h2>
         </div>
     );
 };

@@ -4,13 +4,14 @@ import './AddNews.css';
 const AddNews = () => {
     return (
         <div className="container">
-            <h2 className="text-right mt-5">Add your Post</h2>
+           <div className="shadow p-5 mt-5 mb-5">
+           <h2 className="text-center ">Add Your Post</h2>
             <form>
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">News Title</label>
                     <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="news title"/>  
                 </div>
-                <div classNameName="row">
+                <div classNameName="row d-flex">
                     <div classNameName="col-md-6">
                     <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Author Name</label>
@@ -30,10 +31,11 @@ const AddNews = () => {
                 </div>
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Description</label>
-                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="description"/>  
+                    <textarea type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="description"/>  
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
+           </div>
         </div>
     );
 };

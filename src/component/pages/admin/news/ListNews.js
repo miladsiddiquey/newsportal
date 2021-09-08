@@ -4,7 +4,7 @@ import './ListNews.css';
 const ListNews = () => {
     return (
         <div>
-            <h1>this is list news page</h1>
+            <h2 className="text-center mt-5">List of News </h2>
         </div>
     );
 };
