@@ -6,7 +6,10 @@ import topNewsData from '../../../allData/TopNewsData.json'
 const TopNews = () => {
    const [topNews, setTopNews] = useState([]);
    useEffect(()=>{
-       setTopNews(topNewsData)
+    fetch('http://localhost:5000/topNewsData')
+    .then(res => res.json())
+    .then(data => setTopNews(data))
+    //    setTopNews(topNewsData)
    },[])
 
     return (
@@ -18,11 +21,13 @@ const TopNews = () => {
                 <div className="row">
                 {
                     topNews.slice(0,4).map((tNews, index) =>(
-                        <div className="col-md-6 mt-4">
-                            <img src={tNews.img} alt="" className="img-fluid" />
+                        <div className="col-md-6 d-flex ">
+                            <div>
+                            <img src={`data:image/png;base64,${tNews.image.img}`} alt="" className="img-fluid" style={{height:'200px',width:'400px'}} />
                             <h4 className="mt-4">{tNews.title}</h4>                           
-                            <p className="mt-3">{tNews.discreption}</p>
+                            <p className="mt-3">{tNews.description}</p>
                             <Link to={`/topSingle/${tNews.id}`} className="link">Read More...</Link>
+                            </div>
                         </div>
                     ))
                 }
@@ -34,11 +39,11 @@ const TopNews = () => {
                    {
                        topNews.slice(0,3).map((cNews, index) =>(
                            <div className="row align-items-center">                             
-                               <div className="col-md-6 mt-3 ">
-                               <img src={cNews.img} alt="" className="img-fluid" />
+                               <div className="col-md-6 mt-3 d-flex ">
+                               <img src={`data:image/png;base64,${cNews.image.img}`} alt="" className="img-fluid"  />
                                
                                </div>
-                               <div className="col-md-6 mt-3">
+                               <div className="col-md-6 mt-3 d-flex ">
                                <h6>{cNews.title}</h6>
                                </div>
                            </div>
