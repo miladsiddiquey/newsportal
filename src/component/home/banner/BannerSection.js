@@ -7,7 +7,7 @@ const BannerSection = () => {
 
     const [slid, setSlid] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/topNewsData')
+        fetch('https://shrouded-coast-00122.herokuapp.com/topNewsData')
             .then(res => res.json())
             .then(data => setSlid(data))
 

@@ -6,7 +6,7 @@ const Techonology = () => {
    
     const[technology, setTechnology] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/technologyNews')
+        fetch('https://shrouded-coast-00122.herokuapp.com/technologyNews')
         .then(res => res.json())
         .then(data => setTechnology(data.reverse()))
     },[])

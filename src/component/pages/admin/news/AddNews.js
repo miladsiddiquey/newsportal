@@ -25,7 +25,7 @@ const AddNews = () => {
         formData.append('shortDis', info.shortDis);
         formData.append('description', info.description);
 
-        fetch('http://localhost:5000/addNews', {
+        fetch('https://shrouded-coast-00122.herokuapp.com/addNews', {
             method: 'POST',
             body: formData
         })
@@ -60,11 +60,8 @@ const AddNews = () => {
                                         <option value="1">Food</option>
                                         <option value="2">Sports</option>
                                         <option value="3">International</option>
-                                        <option value="4">Techonology</option>
-                                        <option value="5">Status</option>
-                                        <option value="6">Travel</option>
-                                        <option value="7">Music</option>
-                                        <option value="8">Video</option>
+                                        <option value="4">Technology</option>
+                                       
                                     </select>                              
                             </div>
                         </div>

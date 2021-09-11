@@ -33,7 +33,7 @@ const App = () => {
          <Route path = '/foodNews'><FoodNews/></Route>
          <PrivateRoute path = '/sportsNews'><SportsNews/></PrivateRoute>
          <PrivateRoute path = '/interNews'><InterNews/></PrivateRoute>
-         <PrivateRoute path = '/admin'><Admin/></PrivateRoute> 
+         <Route path = '/admin'><Admin/></Route> 
          <Route path = '/technology'><TechNews/></Route>    
          <Route path = '/login'><Login/></Route>    
          <Route exact path = '/'><Home/></Route>
