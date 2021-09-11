@@ -19,3 +19,16 @@
     padding-top:10px;
     
 }
+.header-top-menu.active{
+    color:red !important;
+    margin-left: 0 !important;
+}
+.header-top-menu{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.header-top-menu:hover{
+    color:red !important;
+}
