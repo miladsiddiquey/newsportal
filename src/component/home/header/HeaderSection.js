@@ -58,7 +58,7 @@ const HeaderSection = () => {
                             <Link to="/sportsNews" className="header-top-menu" >Sports</Link>
                             <Link to="/technology" className="header-top-menu" >Technology</Link>
                             <Link to="/interNews" className="header-top-menu" >International</Link>
-                            <Link to="/admin" className="header-top-menu" >Admin</Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
                     <FontAwesomeIcon icon={faSearch} className="text-white" style={{cursor:'pointer'}} />
