@@ -14,6 +14,7 @@ const TopNews = () => {
 
     return (
         <div className="container">
+            {/* <h2>top news</h2> */}
             <div className=" row top-news">
                 <div className="text-center">
                     <img src="https://i.ibb.co/qx3K8H7/Copper-Loader.gif" alt="" className="img-fluid d-none" />
