@@ -6,7 +6,7 @@ import './TopNews.css';
 const TopNews = () => {
    const [topNews, setTopNews] = useState([]);
    useEffect(()=>{
-    fetch('https://shrouded-coast-00122.herokuapp.com/topNewsData')
+    fetch('http://localhost:5000/topNewsData')
     .then(res => res.json())
     .then(data => setTopNews(data.reverse()))
     //    setTopNews(topNewsData)
@@ -43,7 +43,7 @@ const TopNews = () => {
                        topNews.slice(0,3).map((cNews, index) =>(
                            <div className="row align-items-center">                             
                                <div className="col-md-6 mt-3 d-flex ">
-                               <img src={`data:image/png;base64,${cNews.image.img}`} alt="" className="img-fluid"  />
+                               <Link to={`/topSingle/${cNews._id}`} className="link">  <img src={`data:image/png;base64,${cNews.image.img}`} alt="" className="img-fluid"  /></Link>
                                
                                </div>
                                <div className="col-md-6 mt-3 d-flex ">

@@ -12,7 +12,7 @@ console.log(singleTD);
 
     useEffect(() => {
         
-        const url = `https://shrouded-coast-00122.herokuapp.com/news/${newsId}`;
+        const url = `http://localhost:5000/news/${newsId}`;
        
         fetch(url)
             .then(res => res.json())

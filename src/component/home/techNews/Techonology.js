@@ -6,7 +6,7 @@ const Techonology = () => {
    
     const[technology, setTechnology] = useState([]);
     useEffect(()=>{
-        fetch('https://shrouded-coast-00122.herokuapp.com/technologyNews')
+        fetch('http://localhost:5000/technologyNews')
         .then(res => res.json())
         .then(data => setTechnology(data.reverse()))
     },[])
@@ -32,7 +32,7 @@ const Techonology = () => {
                        technology.slice(0,4).map((tech, index) =>(
                            <div className="row align-items-center">                             
                                <div className="col-md-6 mt-3 ">
-                               <img src={`data:image/png;base64,${tech.image.img}`} alt="" className="img-fluid" />
+                               <Link to={`/topSingle/${tech._id}`} className="link">   <img src={`data:image/png;base64,${tech.image.img}`} alt="" className="img-fluid" /></Link>
                                
                                </div>
                                <div className="col-md-6 mt-3">
