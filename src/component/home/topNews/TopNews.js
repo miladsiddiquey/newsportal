@@ -6,7 +6,7 @@ import './TopNews.css';
 const TopNews = () => {
    const [topNews, setTopNews] = useState([]);
    useEffect(()=>{
-    fetch('http://localhost:5000/topNewsData')
+    fetch('https://shrouded-coast-00122.herokuapp.com/topNewsData')
     .then(res => res.json())
     .then(data => setTopNews(data.reverse()))
     //    setTopNews(topNewsData)
