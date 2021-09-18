@@ -31,8 +31,8 @@ const BannerSection = () => {
                         </Carousel>
                     </div>
                     <div className="col-md-6">
-                        <div className="row test">
-                            <div className="col-md-6">
+                        <div className="row ">
+                            <div className="col-6">
 
                             <Link to="/foodNews" className="link"> <div className="category-news-wrap">
                                     <div className="news-img">
@@ -46,7 +46,7 @@ const BannerSection = () => {
                                 </div></Link>
 
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-6">
                             <Link to="/sportsNews" className="link">  <div className="category-news-wrap">
                                     <div className="news-img">
                                         <img src="https://i.ibb.co/dmqwC1z/barbell-375482-750x406.jpg" alt="" className="img-fluid" />
@@ -58,7 +58,7 @@ const BannerSection = () => {
                             </div>
                         </div>
                         <div className="row mt-3">
-                         <div className="col-md-6">
+                         <div className="col-6">
                          <Link to="/interNews" className="link"> <div className="category-news-wrap">
                                     <div className="news-img">
                                         <img src="https://i.ibb.co/W0hhch5/eye-766166-1280-750x406.jpg" alt="" className="img-fluid" />
@@ -68,7 +68,7 @@ const BannerSection = () => {
                                     </div>
                                 </div></Link>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-6">
                             <Link to="/interNews" className="link"> <div className="category-news-wrap">
                                     <div className="news-img">
                                         <img src="https://i.ibb.co/5rwP5Hx/smart-watch-821559-1280-750x406.jpg" alt="" className="img-fluid" />

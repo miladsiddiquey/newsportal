@@ -30,7 +30,7 @@ const Techonology = () => {
                     <div className="col-md-6">
                     {
                        technology.slice(0,4).map((tech, index) =>(
-                           <div className="row align-items-center">                             
+                           <div className="row  align-items-center">                             
                                <div className="col-md-6 mt-3 ">
                                <Link to={`/topSingle/${tech._id}`} className="link">   <img src={`data:image/png;base64,${tech.image.img}`} alt="" className="img-fluid" /></Link>
                                
