@@ -3,3 +3,4 @@
 
 Live-link: https://newsportal-e77da.web.app/
 Server-link: https://github.com/miladsiddiquey/newsportal-server.git
+AdminPage-Link: https://newsportal-e77da.web.app/admin
